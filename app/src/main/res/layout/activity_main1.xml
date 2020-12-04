@@ -27,6 +27,7 @@
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/mTab_Id"
             android:layout_width="match_parent"
+            app:tabSelectedTextColor="@android:color/black"
             android:layout_height="60dp"/>
 
     </com.google.android.material.appbar.AppBarLayout>

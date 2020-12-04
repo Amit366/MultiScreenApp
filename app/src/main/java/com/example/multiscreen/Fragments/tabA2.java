@@ -30,36 +30,36 @@ public class tabA2 extends Fragment {
 
         ArrayList<Animals> birdName = new ArrayList<>();
 
-        Animals bird = new  Animals("Cow",R.drawable.cow2,R.raw.dog);
+        Animals bird = new  Animals("Tiger",R.drawable.tiger,R.raw.tiger);
         birdName.add(bird);
 
-        bird = new  Animals("Elephant",R.drawable.elephant,R.raw.elephant);
+        bird = new  Animals("Deer",R.drawable.deer,R.raw.deer);
         birdName.add(bird);
 
-        bird = new Animals("Rabbit",R.drawable.rabbit,R.raw.dog);
+
+        bird = new  Animals("Lion",R.drawable.lion,R.raw.lion4);
         birdName.add(bird);
 
-        bird = new  Animals("Cat",R.drawable.cat2jpg,R.raw.dog);
+
+        bird = new Animals("Zebra",R.drawable.zebra,R.raw.zebra);
         birdName.add(bird);
 
-        bird = new  Animals("Buffalo",R.drawable.buffalo2,R.raw.dog);
+
+        bird = new  Animals("Bear",R.drawable.beer,R.raw.bear);
         birdName.add(bird);
 
-        bird = new  Animals("Cow",R.drawable.cow2,R.raw.dog);
+
+        bird = new  Animals("Rhinoceros",R.drawable.rhinoceros,R.raw.rhinoceros);
         birdName.add(bird);
 
-        bird = new  Animals("Elephant",R.drawable.elephant,R.raw.dog);
-        birdName.add(bird);
 
-        bird = new  Animals("Rabbit",R.drawable.rabbit,R.raw.dog);
-        birdName.add(bird);
 
         return birdName;
     }
 
     @Override
     public String toString() {
-        String title ="Birds";
+        String title ="Wild Animals";
         return title;
     }
 

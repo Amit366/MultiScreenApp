@@ -32,31 +32,22 @@ public class tabA1 extends Fragment {
 
             ArrayList<Animals> animalName = new ArrayList<>();
 
-            Animals animal = new  Animals("Cow",R.drawable.cow2,R.raw.cow);
+            Animals  animal = new  Animals("Dog",R.drawable.dog,R.raw.dog);
             animalName.add(animal);
 
-            animal = new  Animals("Dog",R.drawable.dog,R.raw.dog);
-            animalName.add(animal);
-
-            animal = new  Animals("Elephant",R.drawable.elephant,R.raw.elephant);
-            animalName.add(animal);
-
-            animal = new  Animals("Rabbit",R.drawable.rabbit,R.raw.dog);
-            animalName.add(animal);
-
-            animal = new  Animals("Cat",R.drawable.cat2jpg,R.raw.dog);
-            animalName.add(animal);
-
-            animal = new  Animals("Buffalo",R.drawable.buffalo2,R.raw.dog);
+            animal = new  Animals("Cow",R.drawable.cow2,R.raw.cow);
             animalName.add(animal);
 
             animal = new  Animals("Horse",R.drawable.horse,R.raw.horse);
             animalName.add(animal);
 
-            animal = new  Animals("Giraffe",R.drawable.giraffejpg,R.raw.dog);
+            animal = new  Animals("Cat",R.drawable.cat2jpg,R.raw.cat);
             animalName.add(animal);
 
-            animal = new  Animals("Lion",R.drawable.lion,R.raw.lion4);
+            animal = new  Animals("Camel",R.drawable.rabbit,R.raw.camel);
+            animalName.add(animal);
+
+            animal = new  Animals("Elephant",R.drawable.elephant,R.raw.elephant);
             animalName.add(animal);
 
 
@@ -65,7 +56,7 @@ public class tabA1 extends Fragment {
 
         @Override
         public String toString() {
-            String title ="Animals";
+            String title ="Pet Animals";
             return title;
         }
     }

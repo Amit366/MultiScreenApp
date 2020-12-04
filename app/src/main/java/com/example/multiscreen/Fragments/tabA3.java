@@ -32,37 +32,30 @@ public class tabA3 extends Fragment {
 
         ArrayList<Animals>aquaticName = new ArrayList<>();
 
-        Animals aquatic= new   Animals("Cow",R.drawable.cow2,R.raw.dog);
+        Animals aquatic= new  Animals("Peacock",R.drawable.peacock,R.raw.peacock);
         aquaticName.add(aquatic);
 
-        aquatic= new  Animals("Elephant",R.drawable.elephant,R.raw.elephant);
+        aquatic = new  Animals("Pigeon",R.drawable.pigeon,R.raw.pigeons);
         aquaticName.add(aquatic);
 
-        aquatic = new  Animals("Rabbit",R.drawable.rabbit,R.raw.dog);
+        aquatic = new Animals("Parrot",R.drawable.parrot,R.raw.parrot);
         aquaticName.add(aquatic);
 
-        aquatic = new  Animals("Cat",R.drawable.cat2jpg,R.raw.dog);
+        aquatic = new Animals("Hummingbird",R.drawable.hummingbird,R.raw.hummingbird);
         aquaticName.add(aquatic);
 
-        aquatic = new  Animals("Buffalo",R.drawable.buffalo2,R.raw.dog);
+        aquatic= new   Animals("Crow",R.drawable.crow,R.raw.crow);
         aquaticName.add(aquatic);
 
-        aquatic= new  Animals("Elephant",R.drawable.elephant,R.raw.dog);
+        aquatic= new  Animals("Owl",R.drawable.owl,R.raw.owl);
         aquaticName.add(aquatic);
-
-        aquatic = new  Animals("Rabbit",R.drawable.rabbit,R.raw.dog);
-        aquaticName.add(aquatic);
-
-        aquatic = new Animals("Cat",R.drawable.cat2jpg,R.raw.dog);
-        aquaticName.add(aquatic);
-
 
         return aquaticName;
     }
 
     @Override
     public String toString() {
-        String title ="Others";
+        String title ="Birds";
         return title;
     }
 

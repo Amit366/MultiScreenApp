@@ -12,7 +12,7 @@ public class Animals {
          this.name = name;
          this.image = image;
          this.audio = audio;
-     }
+    }
 
      public String getName()
      {

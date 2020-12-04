@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/animalImage"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="-39dp"
+            android:layout_marginLeft="-29dp"
             android:layout_marginTop="-50dp"
             android:text="Cow"
             android:textColor="@android:color/black"
