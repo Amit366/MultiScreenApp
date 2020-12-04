@@ -12,8 +12,8 @@ import android.view.ViewGroup;
 import android.widget.GridView;
 
 import com.example.multiscreen.R;
-import com.example.multiscreen.mData.Animals;
-import com.example.multiscreen.mGridView.CustomAdapter1;
+import com.example.multiscreen.mData.Model;
+import com.example.multiscreen.mGridView.CustomAdapter;
 
 import java.util.ArrayList;
 
@@ -22,44 +22,44 @@ public class tabA2 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_tab_a2,container,false);
         GridView gv = rootView.findViewById(R.id.animal_tab2);
-        CustomAdapter1 adapter = new CustomAdapter1(this.getActivity(),getBirdsTab2());
+        CustomAdapter adapter = new CustomAdapter(this.getActivity(),getBirdsTab2());
         gv.setAdapter(adapter);
         return rootView;
     }
-    private ArrayList<Animals> getBirdsTab2(){
+    private ArrayList<Model> getBirdsTab2(){
 
-        ArrayList<Animals> birdName = new ArrayList<>();
+        ArrayList<Model> birds = new ArrayList<>();
 
-        Animals bird = new  Animals("Tiger",R.drawable.tiger,R.raw.tiger);
-        birdName.add(bird);
+        Model bird = new Model("Tiger",R.drawable.tiger,R.raw.tiger);
+        birds.add(bird);
 
-        bird = new  Animals("Deer",R.drawable.deer,R.raw.deer);
-        birdName.add(bird);
-
-
-        bird = new  Animals("Lion",R.drawable.lion,R.raw.lion4);
-        birdName.add(bird);
+        bird = new Model("Deer",R.drawable.deer,R.raw.deer);
+        birds.add(bird);
 
 
-        bird = new Animals("Zebra",R.drawable.zebra,R.raw.zebra);
-        birdName.add(bird);
+        bird = new Model("Lion",R.drawable.lion,R.raw.lion4);
+        birds.add(bird);
 
 
-        bird = new  Animals("Bear",R.drawable.beer,R.raw.bear);
-        birdName.add(bird);
+        bird = new Model("Zebra",R.drawable.zebra,R.raw.zebra);
+        birds.add(bird);
 
 
-        bird = new  Animals("Rhinoceros",R.drawable.rhinoceros,R.raw.rhinoceros);
-        birdName.add(bird);
+        bird = new Model("Bear",R.drawable.beer,R.raw.bear);
+        birds.add(bird);
+
+
+        bird = new Model("Rhinoceros",R.drawable.rhinoceros,R.raw.rhinoceros);
+        birds.add(bird);
 
 
 
-        return birdName;
+        return birds;
     }
 
     @Override
     public String toString() {
-        String title ="Wild Animals";
+        String title ="Wild Model";
         return title;
     }
 

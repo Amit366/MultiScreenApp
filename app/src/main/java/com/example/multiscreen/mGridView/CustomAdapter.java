@@ -10,21 +10,19 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.multiscreen.R;
-import com.example.multiscreen.mData.Animals;
-import com.example.multiscreen.mData.Animals;
+import com.example.multiscreen.mData.Model;
 
 import java.util.ArrayList;
 
-public class CustomAdapter1 extends BaseAdapter {
+public class CustomAdapter extends BaseAdapter {
     Context c;
-    ArrayList<Animals> animals;
+    ArrayList<Model> animals;
     LayoutInflater inflater;
     MediaPlayer mediaPlayer;
 
 
-    public CustomAdapter1(Context c, ArrayList<Animals> animals) {
+    public CustomAdapter(Context c, ArrayList<Model> animals) {
         this.c = c;
         this.animals = animals;
     }
@@ -58,7 +56,7 @@ public class CustomAdapter1 extends BaseAdapter {
         }
 
         TextView nameTxt = (TextView) view.findViewById(R.id.text1);
-        ImageView image = (ImageView) view.findViewById(R.id.animalImage);
+        ImageView image = (ImageView) view.findViewById(R.id.Image);
         ImageButton button = (ImageButton) view.findViewById(R.id.buttonImage);
 
 

@@ -2,13 +2,13 @@ package com.example.multiscreen.mData;
 
 
 
-public class Animals {
+public class Model {
 
     String name;
     int image;
     int audio;
 
-    public Animals(String name, int image, int audio){
+    public Model(String name, int image, int audio){
          this.name = name;
          this.image = image;
          this.audio = audio;

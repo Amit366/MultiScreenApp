@@ -43,13 +43,13 @@
                     android:layout_marginLeft="1dp"
                     android:layout_marginRight="3dp"
                     android:padding="10dp"
-                    android:src="@drawable/animal" />
+                    android:src="@drawable/shapes" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Animals/Birds"
+                    android:text="Shapes/Colors"
                     android:textColor="@android:color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -85,13 +85,13 @@
                     android:layout_marginLeft="1dp"
                     android:layout_marginRight="3dp"
                     android:padding="10dp"
-                    android:src="@drawable/shapes" />
+                    android:src="@drawable/animal" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:text="Shapes/Colors"
+                    android:text="Animals/Birds"
                     android:textColor="@android:color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />

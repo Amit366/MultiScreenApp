@@ -3,10 +3,8 @@ package com.example.multiscreen;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
-
 import android.os.Bundle;
-
-import com.example.multiscreen.Adapter.PageAdapter1;
+import com.example.multiscreen.Adapter.PageAdapter;
 import com.example.multiscreen.Fragments.tabA1;
 import com.example.multiscreen.Fragments.tabA2;
 import com.example.multiscreen.Fragments.tabA3;
@@ -25,15 +23,15 @@ public class MainActivity1 extends AppCompatActivity implements TabLayout.OnTabS
         setSupportActionBar(toolbar);
 
         vp =(ViewPager) findViewById(R.id.viewPage1);
-        this.addPager();
+        this.addPager1();
 
         tabLayout = findViewById(R.id.mTab_Id);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         tabLayout.setupWithViewPager(vp);
         tabLayout.setOnTabSelectedListener(this);
     }
-    private void addPager(){
-        PageAdapter1 pageAdapter = new PageAdapter1(this.getSupportFragmentManager());
+    private void addPager1(){
+        PageAdapter pageAdapter = new PageAdapter(this.getSupportFragmentManager());
         pageAdapter.addFragment(new tabA1());
         pageAdapter.addFragment(new tabA2());
         pageAdapter.addFragment(new tabA3());

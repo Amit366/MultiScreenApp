@@ -12,8 +12,8 @@ import android.view.ViewGroup;
 import android.widget.GridView;
 
 import com.example.multiscreen.R;
-import com.example.multiscreen.mData.Animals;
-import com.example.multiscreen.mGridView.CustomAdapter1;
+import com.example.multiscreen.mData.Model;
+import com.example.multiscreen.mGridView.CustomAdapter;
 
 import java.util.ArrayList;
 
@@ -22,41 +22,41 @@ public class tabA1 extends Fragment {
         public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_tab_a1,container,false);
             GridView gv = rootView.findViewById(R.id.animal_tab1);
-            CustomAdapter1 adapter = new CustomAdapter1(this.getActivity(),getAnimalsTab1());
+            CustomAdapter adapter = new CustomAdapter(this.getActivity(),getAnimalsTab1());
 
             gv.setAdapter(adapter);
             return rootView;
         }
 
-        private ArrayList<Animals> getAnimalsTab1(){
+        private ArrayList<Model> getAnimalsTab1(){
 
-            ArrayList<Animals> animalName = new ArrayList<>();
+            ArrayList<Model> animals= new ArrayList<>();
 
-            Animals  animal = new  Animals("Dog",R.drawable.dog,R.raw.dog);
-            animalName.add(animal);
+            Model animal = new Model("Dog",R.drawable.dog,R.raw.dog);
+            animals.add(animal);
 
-            animal = new  Animals("Cow",R.drawable.cow2,R.raw.cow);
-            animalName.add(animal);
+            animal = new Model("Cow",R.drawable.cow2,R.raw.cow);
+            animals.add(animal);
 
-            animal = new  Animals("Horse",R.drawable.horse,R.raw.horse);
-            animalName.add(animal);
+            animal = new Model("Horse",R.drawable.horse,R.raw.horse);
+            animals.add(animal);
 
-            animal = new  Animals("Cat",R.drawable.cat2jpg,R.raw.cat);
-            animalName.add(animal);
+            animal = new Model("Cat",R.drawable.cat2jpg,R.raw.cat);
+            animals.add(animal);
 
-            animal = new  Animals("Camel",R.drawable.rabbit,R.raw.camel);
-            animalName.add(animal);
+            animal = new Model("Camel",R.drawable.rabbit,R.raw.camel);
+            animals.add(animal);
 
-            animal = new  Animals("Elephant",R.drawable.elephant,R.raw.elephant);
-            animalName.add(animal);
+            animal = new Model("Elephant",R.drawable.elephant,R.raw.elephant);
+            animals.add(animal);
 
 
-            return animalName;
+            return animals;
         }
 
         @Override
         public String toString() {
-            String title ="Pet Animals";
+            String title ="Pet Model";
             return title;
         }
     }
