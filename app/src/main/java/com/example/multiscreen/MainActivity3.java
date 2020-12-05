@@ -1,15 +1,60 @@
 package com.example.multiscreen;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
+
+import com.example.multiscreen.Adapter.PageAdapter;
 
 import android.os.Bundle;
 
-public class MainActivity3 extends AppCompatActivity {
+import com.example.multiscreen.Fragments.AFragment;
+import com.example.multiscreen.Fragments.NumFragment;
 
+import com.google.android.material.tabs.TabLayout;
+
+import org.jetbrains.annotations.NotNull;
+
+public class MainActivity3 extends AppCompatActivity implements TabLayout.OnTabSelectedListener {
+
+    ViewPager vp;
+    TabLayout tabLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
-        //TODO
+        setContentView(R.layout.activity_main2);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        vp =(ViewPager) findViewById(R.id.viewPage2);
+        this.addPager2();
+
+        tabLayout = findViewById(R.id.mTab_Id);
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+        tabLayout.setupWithViewPager(vp);
+        tabLayout.setOnTabSelectedListener(this);
+    }
+
+    private void addPager2(){
+        PageAdapter pageAdapter = new PageAdapter(this.getSupportFragmentManager());
+        pageAdapter.addFragment(new AFragment());
+        pageAdapter.addFragment(new NumFragment());
+
+
+        vp.setAdapter(pageAdapter);
+    }
+
+    @Override
+    public void onTabSelected(TabLayout.Tab tab) {
+        vp.setCurrentItem(tab.getPosition());
+    }
+
+    @Override
+    public void onTabUnselected(TabLayout.Tab tab) {
+    }
+
+    @Override
+    public void onTabReselected(TabLayout.Tab tab) {
     }
 }
